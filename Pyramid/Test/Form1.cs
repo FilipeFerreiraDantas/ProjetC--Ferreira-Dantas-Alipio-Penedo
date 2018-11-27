@@ -18,8 +18,15 @@ namespace Pyramid
         {
             InitializeComponent();
             this.Paint += new PaintEventHandler(MyPaint);
-            
-           
+
+            List<PictureBox> pictureBoxes = new List<PictureBox>();
+            Control parentControl = this.Parent;
+
+            for(int i=0;i<=28;i++)
+            {
+                pictureBoxes.Add(parentControl["pictureBox" + i.ToString()]);
+            }
+
         }
 
         
@@ -30,20 +37,11 @@ namespace Pyramid
         }
         private void MyPaint(object sender, PaintEventArgs e)
         {
-            // string rndmSorteCarte = ;
-            // string rndmNumCarte = ;
-
-            Bitmap bitmap;
-            Bitmap bitmap1 = new Bitmap(CarteGenerator.getCarte(CarteGenerator.SorteCarte.Coeur, CarteGenerator.ValeurCarte.Sept, 0.5));
-            Bitmap bitmap2 = new Bitmap(CarteGenerator.getCarte(CarteGenerator.SorteCarte.Carreau, CarteGenerator.ValeurCarte.Huit, 0.5));
-
-            string valeurSorte = CarteGenerator.GetRandomSorte();
-
-
-            var Sorte = CarteGenerator.GetRandomSorte();
-            for(int i = 1; i<=28; i++)
+            for (int i = 1; i <= 28; i++)
             {
-               bitmap = new Bitmap(CarteGenerator.getCarte(CarteGenerator.SorteCarte.valeurSorte, CarteGenerator.GetRandomNumCard(), 0.5));
+                Bitmap bitmap1 = new Bitmap(CarteGenerator.getRandomCarte(0.5));
+                imgCarte1.Image = bitmap1;
+
             }
 
 
@@ -51,7 +49,7 @@ namespace Pyramid
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Console.WriteLine(GetRandomSorte());
+             
         }
     }
 }

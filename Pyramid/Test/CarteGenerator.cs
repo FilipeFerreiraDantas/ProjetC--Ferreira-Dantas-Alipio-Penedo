@@ -134,30 +134,17 @@ namespace GameCardGenerator
 			return getCarteImage( 1950, 400, size );
 		}
 
-        public static string GetRandomSorte()
+        public static Image getRandomCarte(double size)
         {
-            Array valuesSorte = Enum.GetValues(typeof(CarteGenerator.SorteCarte));
-            
+            Array values = Enum.GetValues(typeof(SorteCarte));
+            Random random = new Random();
+            SorteCarte randomSorte = (SorteCarte)values.GetValue(random.Next(values.Length));
 
-            var rnd = new Random();
-            int indexSorte = rnd.Next(0, valuesSorte.Length);
-           
+            Array valuesNum = Enum.GetValues(typeof(ValeurCarte));
+            ValeurCarte randomValeur = (ValeurCarte)values.GetValue(random.Next(values.Length));
 
-            var resultSorte = valuesSorte.GetValue(indexSorte);
-            return resultSorte.ToString();
+            return getCarteImage(((int)randomValeur) * 150, ((int)randomSorte) * 200, size);
         }
 
-        public static string GetRandomNumCard()
-        {
-            
-            Array valuesNumCarte = Enum.GetValues(typeof(CarteGenerator.ValeurCarte));
-
-            var rnd = new Random();
-          
-            int indexNumCarte = rnd.Next(0, valuesNumCarte.Length);
-
-            var resultNum = valuesNumCarte.GetValue(indexNumCarte);
-            return resultNum.ToString();
-        }
     }
 }
