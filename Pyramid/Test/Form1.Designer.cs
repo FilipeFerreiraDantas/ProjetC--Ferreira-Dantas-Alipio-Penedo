@@ -88,7 +88,7 @@
             // 
             // imgCarte1
             // 
-            this.imgCarte1.Location = new System.Drawing.Point(716, 12);
+            this.imgCarte1.Location = new System.Drawing.Point(367, 29);
             this.imgCarte1.Name = "imgCarte1";
             this.imgCarte1.Size = new System.Drawing.Size(75, 100);
             this.imgCarte1.TabIndex = 1;
@@ -96,7 +96,7 @@
             // 
             // imgCarte2
             // 
-            this.imgCarte2.Location = new System.Drawing.Point(666, 52);
+            this.imgCarte2.Location = new System.Drawing.Point(317, 69);
             this.imgCarte2.Name = "imgCarte2";
             this.imgCarte2.Size = new System.Drawing.Size(75, 100);
             this.imgCarte2.TabIndex = 2;
@@ -104,7 +104,7 @@
             // 
             // imgCarte3
             // 
-            this.imgCarte3.Location = new System.Drawing.Point(769, 52);
+            this.imgCarte3.Location = new System.Drawing.Point(420, 69);
             this.imgCarte3.Name = "imgCarte3";
             this.imgCarte3.Size = new System.Drawing.Size(75, 100);
             this.imgCarte3.TabIndex = 3;
@@ -112,7 +112,7 @@
             // 
             // imgCarte4
             // 
-            this.imgCarte4.Location = new System.Drawing.Point(615, 90);
+            this.imgCarte4.Location = new System.Drawing.Point(266, 107);
             this.imgCarte4.Name = "imgCarte4";
             this.imgCarte4.Size = new System.Drawing.Size(75, 100);
             this.imgCarte4.TabIndex = 4;
@@ -120,7 +120,7 @@
             // 
             // imgCarte6
             // 
-            this.imgCarte6.Location = new System.Drawing.Point(818, 90);
+            this.imgCarte6.Location = new System.Drawing.Point(469, 107);
             this.imgCarte6.Name = "imgCarte6";
             this.imgCarte6.Size = new System.Drawing.Size(75, 100);
             this.imgCarte6.TabIndex = 5;
@@ -128,7 +128,7 @@
             // 
             // imgCarte5
             // 
-            this.imgCarte5.Location = new System.Drawing.Point(716, 90);
+            this.imgCarte5.Location = new System.Drawing.Point(367, 107);
             this.imgCarte5.Name = "imgCarte5";
             this.imgCarte5.Size = new System.Drawing.Size(75, 100);
             this.imgCarte5.TabIndex = 6;
@@ -136,7 +136,7 @@
             // 
             // imgCarte7
             // 
-            this.imgCarte7.Location = new System.Drawing.Point(572, 121);
+            this.imgCarte7.Location = new System.Drawing.Point(223, 138);
             this.imgCarte7.Name = "imgCarte7";
             this.imgCarte7.Size = new System.Drawing.Size(75, 100);
             this.imgCarte7.TabIndex = 7;
@@ -144,7 +144,7 @@
             // 
             // imgCarte8
             // 
-            this.imgCarte8.Location = new System.Drawing.Point(666, 121);
+            this.imgCarte8.Location = new System.Drawing.Point(317, 138);
             this.imgCarte8.Name = "imgCarte8";
             this.imgCarte8.Size = new System.Drawing.Size(75, 100);
             this.imgCarte8.TabIndex = 8;
@@ -152,7 +152,7 @@
             // 
             // imgCarte9
             // 
-            this.imgCarte9.Location = new System.Drawing.Point(769, 121);
+            this.imgCarte9.Location = new System.Drawing.Point(420, 138);
             this.imgCarte9.Name = "imgCarte9";
             this.imgCarte9.Size = new System.Drawing.Size(75, 100);
             this.imgCarte9.TabIndex = 9;
@@ -160,7 +160,7 @@
             // 
             // imgCarte10
             // 
-            this.imgCarte10.Location = new System.Drawing.Point(860, 121);
+            this.imgCarte10.Location = new System.Drawing.Point(511, 138);
             this.imgCarte10.Name = "imgCarte10";
             this.imgCarte10.Size = new System.Drawing.Size(75, 100);
             this.imgCarte10.TabIndex = 10;
@@ -168,7 +168,7 @@
             // 
             // imgCarte11
             // 
-            this.imgCarte11.Location = new System.Drawing.Point(519, 152);
+            this.imgCarte11.Location = new System.Drawing.Point(170, 169);
             this.imgCarte11.Name = "imgCarte11";
             this.imgCarte11.Size = new System.Drawing.Size(75, 100);
             this.imgCarte11.TabIndex = 11;
@@ -176,7 +176,7 @@
             // 
             // imgCarte15
             // 
-            this.imgCarte15.Location = new System.Drawing.Point(911, 152);
+            this.imgCarte15.Location = new System.Drawing.Point(562, 169);
             this.imgCarte15.Name = "imgCarte15";
             this.imgCarte15.Size = new System.Drawing.Size(75, 100);
             this.imgCarte15.TabIndex = 12;
@@ -184,7 +184,7 @@
             // 
             // imgCarte12
             // 
-            this.imgCarte12.Location = new System.Drawing.Point(615, 152);
+            this.imgCarte12.Location = new System.Drawing.Point(266, 169);
             this.imgCarte12.Name = "imgCarte12";
             this.imgCarte12.Size = new System.Drawing.Size(75, 100);
             this.imgCarte12.TabIndex = 13;
@@ -192,7 +192,7 @@
             // 
             // imgCarte13
             // 
-            this.imgCarte13.Location = new System.Drawing.Point(716, 152);
+            this.imgCarte13.Location = new System.Drawing.Point(367, 169);
             this.imgCarte13.Name = "imgCarte13";
             this.imgCarte13.Size = new System.Drawing.Size(75, 100);
             this.imgCarte13.TabIndex = 14;
@@ -200,7 +200,7 @@
             // 
             // imgCarte14
             // 
-            this.imgCarte14.Location = new System.Drawing.Point(818, 152);
+            this.imgCarte14.Location = new System.Drawing.Point(469, 169);
             this.imgCarte14.Name = "imgCarte14";
             this.imgCarte14.Size = new System.Drawing.Size(75, 100);
             this.imgCarte14.TabIndex = 15;
@@ -208,7 +208,7 @@
             // 
             // imgCarte16
             // 
-            this.imgCarte16.Location = new System.Drawing.Point(470, 182);
+            this.imgCarte16.Location = new System.Drawing.Point(121, 199);
             this.imgCarte16.Name = "imgCarte16";
             this.imgCarte16.Size = new System.Drawing.Size(75, 100);
             this.imgCarte16.TabIndex = 16;
@@ -216,7 +216,7 @@
             // 
             // imgCarte17
             // 
-            this.imgCarte17.Location = new System.Drawing.Point(572, 182);
+            this.imgCarte17.Location = new System.Drawing.Point(223, 199);
             this.imgCarte17.Name = "imgCarte17";
             this.imgCarte17.Size = new System.Drawing.Size(75, 100);
             this.imgCarte17.TabIndex = 17;
@@ -224,7 +224,7 @@
             // 
             // imgCarte18
             // 
-            this.imgCarte18.Location = new System.Drawing.Point(666, 182);
+            this.imgCarte18.Location = new System.Drawing.Point(317, 199);
             this.imgCarte18.Name = "imgCarte18";
             this.imgCarte18.Size = new System.Drawing.Size(75, 100);
             this.imgCarte18.TabIndex = 18;
@@ -232,7 +232,7 @@
             // 
             // imgCarte19
             // 
-            this.imgCarte19.Location = new System.Drawing.Point(769, 182);
+            this.imgCarte19.Location = new System.Drawing.Point(420, 199);
             this.imgCarte19.Name = "imgCarte19";
             this.imgCarte19.Size = new System.Drawing.Size(75, 100);
             this.imgCarte19.TabIndex = 19;
@@ -240,7 +240,7 @@
             // 
             // imgCarte20
             // 
-            this.imgCarte20.Location = new System.Drawing.Point(860, 182);
+            this.imgCarte20.Location = new System.Drawing.Point(511, 199);
             this.imgCarte20.Name = "imgCarte20";
             this.imgCarte20.Size = new System.Drawing.Size(75, 100);
             this.imgCarte20.TabIndex = 20;
@@ -248,7 +248,7 @@
             // 
             // imgCarte21
             // 
-            this.imgCarte21.Location = new System.Drawing.Point(952, 182);
+            this.imgCarte21.Location = new System.Drawing.Point(603, 199);
             this.imgCarte21.Name = "imgCarte21";
             this.imgCarte21.Size = new System.Drawing.Size(75, 100);
             this.imgCarte21.TabIndex = 21;
@@ -256,7 +256,7 @@
             // 
             // imgCarte22
             // 
-            this.imgCarte22.Location = new System.Drawing.Point(426, 217);
+            this.imgCarte22.Location = new System.Drawing.Point(77, 234);
             this.imgCarte22.Name = "imgCarte22";
             this.imgCarte22.Size = new System.Drawing.Size(75, 100);
             this.imgCarte22.TabIndex = 22;
@@ -264,7 +264,7 @@
             // 
             // imgCarte23
             // 
-            this.imgCarte23.Location = new System.Drawing.Point(519, 217);
+            this.imgCarte23.Location = new System.Drawing.Point(170, 234);
             this.imgCarte23.Name = "imgCarte23";
             this.imgCarte23.Size = new System.Drawing.Size(75, 100);
             this.imgCarte23.TabIndex = 23;
@@ -272,7 +272,7 @@
             // 
             // imgCarte24
             // 
-            this.imgCarte24.Location = new System.Drawing.Point(615, 217);
+            this.imgCarte24.Location = new System.Drawing.Point(266, 234);
             this.imgCarte24.Name = "imgCarte24";
             this.imgCarte24.Size = new System.Drawing.Size(75, 100);
             this.imgCarte24.TabIndex = 24;
@@ -280,7 +280,7 @@
             // 
             // imgCarte25
             // 
-            this.imgCarte25.Location = new System.Drawing.Point(716, 217);
+            this.imgCarte25.Location = new System.Drawing.Point(367, 234);
             this.imgCarte25.Name = "imgCarte25";
             this.imgCarte25.Size = new System.Drawing.Size(75, 100);
             this.imgCarte25.TabIndex = 25;
@@ -288,7 +288,7 @@
             // 
             // imgCarte26
             // 
-            this.imgCarte26.Location = new System.Drawing.Point(818, 217);
+            this.imgCarte26.Location = new System.Drawing.Point(469, 234);
             this.imgCarte26.Name = "imgCarte26";
             this.imgCarte26.Size = new System.Drawing.Size(75, 100);
             this.imgCarte26.TabIndex = 26;
@@ -296,7 +296,7 @@
             // 
             // imgCarte27
             // 
-            this.imgCarte27.Location = new System.Drawing.Point(911, 217);
+            this.imgCarte27.Location = new System.Drawing.Point(562, 234);
             this.imgCarte27.Name = "imgCarte27";
             this.imgCarte27.Size = new System.Drawing.Size(75, 100);
             this.imgCarte27.TabIndex = 27;
@@ -304,7 +304,7 @@
             // 
             // imgCarte28
             // 
-            this.imgCarte28.Location = new System.Drawing.Point(1002, 217);
+            this.imgCarte28.Location = new System.Drawing.Point(653, 234);
             this.imgCarte28.Name = "imgCarte28";
             this.imgCarte28.Size = new System.Drawing.Size(75, 100);
             this.imgCarte28.TabIndex = 28;
@@ -315,7 +315,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
-            this.ClientSize = new System.Drawing.Size(1506, 643);
+            this.ClientSize = new System.Drawing.Size(812, 631);
             this.Controls.Add(this.imgCarte28);
             this.Controls.Add(this.imgCarte27);
             this.Controls.Add(this.imgCarte26);
