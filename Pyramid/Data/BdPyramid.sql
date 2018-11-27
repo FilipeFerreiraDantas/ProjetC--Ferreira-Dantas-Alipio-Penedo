@@ -1,0 +1,8 @@
+i
+CREATE DATABASE testDB;
+
+CREATE TABLE Players (Id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+			Pseudo varchar(40) NOT NULL);
+
+CREATE TABLE Scores (IdPlayer int FOREIGN KEY REFRENCES Players(ID),
+					Score int NOT NULL);

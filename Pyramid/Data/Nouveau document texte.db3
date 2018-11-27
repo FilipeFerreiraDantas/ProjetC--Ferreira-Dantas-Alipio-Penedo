@@ -1,3 +1,0 @@
-CREATE TABLE Players (Id int NOT NULL AUTO_INCREMENT,
-			Pseudo varchar(40) NOT NULL,
-			)
