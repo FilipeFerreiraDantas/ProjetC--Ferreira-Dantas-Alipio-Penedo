@@ -56,6 +56,12 @@
             this.imgCarte26 = new System.Windows.Forms.PictureBox();
             this.imgCarte27 = new System.Windows.Forms.PictureBox();
             this.imgCarte28 = new System.Windows.Forms.PictureBox();
+            this.imgNouvelleCarte = new System.Windows.Forms.PictureBox();
+            this.imgLastCarte = new System.Windows.Forms.PictureBox();
+            this.cmdNouvellePartie = new System.Windows.Forms.Button();
+            this.cmdAfficherScores = new System.Windows.Forms.Button();
+            this.lstScores = new System.Windows.Forms.ListBox();
+            this.cmdCacherScores = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte3)).BeginInit();
@@ -84,6 +90,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgNouvelleCarte)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLastCarte)).BeginInit();
             this.SuspendLayout();
             // 
             // imgCarte1
@@ -310,12 +318,73 @@
             this.imgCarte28.TabIndex = 28;
             this.imgCarte28.TabStop = false;
             // 
+            // imgNouvelleCarte
+            // 
+            this.imgNouvelleCarte.Location = new System.Drawing.Point(266, 476);
+            this.imgNouvelleCarte.Name = "imgNouvelleCarte";
+            this.imgNouvelleCarte.Size = new System.Drawing.Size(75, 100);
+            this.imgNouvelleCarte.TabIndex = 29;
+            this.imgNouvelleCarte.TabStop = false;
+            // 
+            // imgLastCarte
+            // 
+            this.imgLastCarte.Location = new System.Drawing.Point(420, 476);
+            this.imgLastCarte.Name = "imgLastCarte";
+            this.imgLastCarte.Size = new System.Drawing.Size(75, 100);
+            this.imgLastCarte.TabIndex = 30;
+            this.imgLastCarte.TabStop = false;
+            // 
+            // cmdNouvellePartie
+            // 
+            this.cmdNouvellePartie.Location = new System.Drawing.Point(24, 497);
+            this.cmdNouvellePartie.Name = "cmdNouvellePartie";
+            this.cmdNouvellePartie.Size = new System.Drawing.Size(75, 37);
+            this.cmdNouvellePartie.TabIndex = 31;
+            this.cmdNouvellePartie.Text = "Nouvelle Partie";
+            this.cmdNouvellePartie.UseVisualStyleBackColor = true;
+            // 
+            // cmdAfficherScores
+            // 
+            this.cmdAfficherScores.Location = new System.Drawing.Point(725, 539);
+            this.cmdAfficherScores.Name = "cmdAfficherScores";
+            this.cmdAfficherScores.Size = new System.Drawing.Size(75, 37);
+            this.cmdAfficherScores.TabIndex = 32;
+            this.cmdAfficherScores.Text = "Afficher les scores";
+            this.cmdAfficherScores.UseVisualStyleBackColor = true;
+            this.cmdAfficherScores.Click += new System.EventHandler(this.cmdAfficherScores_Click);
+            // 
+            // lstScores
+            // 
+            this.lstScores.FormattingEnabled = true;
+            this.lstScores.Location = new System.Drawing.Point(633, 362);
+            this.lstScores.Name = "lstScores";
+            this.lstScores.Size = new System.Drawing.Size(167, 134);
+            this.lstScores.TabIndex = 33;
+            this.lstScores.Visible = false;
+            // 
+            // cmdCacherScores
+            // 
+            this.cmdCacherScores.Location = new System.Drawing.Point(725, 539);
+            this.cmdCacherScores.Name = "cmdCacherScores";
+            this.cmdCacherScores.Size = new System.Drawing.Size(75, 37);
+            this.cmdCacherScores.TabIndex = 34;
+            this.cmdCacherScores.Text = "Cacher les scores";
+            this.cmdCacherScores.UseVisualStyleBackColor = true;
+            this.cmdCacherScores.Visible = false;
+            this.cmdCacherScores.Click += new System.EventHandler(this.cmdCacherScores_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(812, 631);
+            this.Controls.Add(this.cmdCacherScores);
+            this.Controls.Add(this.lstScores);
+            this.Controls.Add(this.cmdAfficherScores);
+            this.Controls.Add(this.cmdNouvellePartie);
+            this.Controls.Add(this.imgLastCarte);
+            this.Controls.Add(this.imgNouvelleCarte);
             this.Controls.Add(this.imgCarte28);
             this.Controls.Add(this.imgCarte27);
             this.Controls.Add(this.imgCarte26);
@@ -375,6 +444,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgNouvelleCarte)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLastCarte)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -409,6 +480,12 @@
         private System.Windows.Forms.PictureBox imgCarte26;
         private System.Windows.Forms.PictureBox imgCarte27;
         private System.Windows.Forms.PictureBox imgCarte28;
+        private System.Windows.Forms.PictureBox imgNouvelleCarte;
+        private System.Windows.Forms.PictureBox imgLastCarte;
+        private System.Windows.Forms.Button cmdNouvellePartie;
+        private System.Windows.Forms.Button cmdAfficherScores;
+        private System.Windows.Forms.ListBox lstScores;
+        private System.Windows.Forms.Button cmdCacherScores;
     }
 }
 
