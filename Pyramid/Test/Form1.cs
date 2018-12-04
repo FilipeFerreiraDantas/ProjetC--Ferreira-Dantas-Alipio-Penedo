@@ -14,27 +14,23 @@ namespace Pyramid
 {
     public partial class Form1 : Form
     {
-        string fichierScores = @"C:\Users\Filipe.FERREIRA-DANT\Documents\Projet C#\Pyramid\Test\bin\Scores.txt";
+        string fichierScores = @"..\Scores.txt";
         Random rd = new Random();
-
+        int random2 = 0;
+        List<Image> Cartes = CarteGenerator.getToutesCartes(0.5);
 
         public Form1()
         {
             InitializeComponent();
-            this.Paint += new PaintEventHandler(MyPaint);
-            Control parentControl = this.Parent;
-
-        }
-
-        
+            
+        }  
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-        private void MyPaint(object sender, PaintEventArgs e)
-        {
-            List<Image> Cartes = CarteGenerator.getToutesCartes(0.5);
+        public void MyPaint()
+        {    
 
             PictureBox[] boxesCarte =
             {
@@ -44,15 +40,18 @@ namespace Pyramid
 
             for (int i = 0; i <= 27; i++)
             {
-                int random = rd.Next(0, 52);
+                int random = rd.Next(0, Cartes.Count());
                 boxesCarte[i].Image = Cartes.ElementAt(random);
                 Cartes.RemoveAt(random);
             }
+
+                      
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-             
+            MyPaint();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -83,6 +82,23 @@ namespace Pyramid
             lstScores.Visible = false;
             cmdAfficherScores.Visible = true;
             cmdCacherScores.Visible = false;
+        }
+
+        private void cmdNextCarte_Click(object sender, EventArgs e)
+        {
+            random2 = rd.Next(0, Cartes.Count);
+            imgNouvelleCarte.Image = Cartes.ElementAt(random2);
+            if (Cartes.Count() >= 1)
+            {
+                imgLastCarte.Image = imgNouvelleCarte.Image;
+                Cartes.RemoveAt(random2);
+                imgNouvelleCarte.Image = Cartes.ElementAt(rd.Next(0, Cartes.Count));
+            }else
+            {
+                cmdSecondPlate.Visible = true;
+            }
+            
+
         }
     }
 }

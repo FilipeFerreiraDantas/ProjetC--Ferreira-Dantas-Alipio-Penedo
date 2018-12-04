@@ -125,7 +125,8 @@ namespace GameCardGenerator
 		{
 			return getCarteImage( ( (int)valeur ) * 150, ( (int)sorte ) * 200, size );
 		}
-		public static Image getJoker( bool colored, double size )
+
+		/*public static Image getJoker( bool colored, double size )
 		{
 			int coef = ( colored ? 0 : 1 );
 			return getCarteImage( 1950, 200 * coef, size );
@@ -133,7 +134,7 @@ namespace GameCardGenerator
 		public static Image getDos( double size )
 		{
 			return getCarteImage( 1950, 400, size );
-		}
+		}*/
 
         public static List<Image> getToutesCartes(double size)
         {

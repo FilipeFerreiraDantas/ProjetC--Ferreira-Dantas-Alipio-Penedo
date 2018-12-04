@@ -62,6 +62,8 @@
             this.cmdAfficherScores = new System.Windows.Forms.Button();
             this.lstScores = new System.Windows.Forms.ListBox();
             this.cmdCacherScores = new System.Windows.Forms.Button();
+            this.cmdNextCarte = new System.Windows.Forms.Button();
+            this.cmdSecondPlate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgCarte3)).BeginInit();
@@ -373,12 +375,34 @@
             this.cmdCacherScores.Visible = false;
             this.cmdCacherScores.Click += new System.EventHandler(this.cmdCacherScores_Click);
             // 
+            // cmdNextCarte
+            // 
+            this.cmdNextCarte.Location = new System.Drawing.Point(360, 479);
+            this.cmdNextCarte.Name = "cmdNextCarte";
+            this.cmdNextCarte.Size = new System.Drawing.Size(45, 37);
+            this.cmdNextCarte.TabIndex = 35;
+            this.cmdNextCarte.Text = ">";
+            this.cmdNextCarte.UseVisualStyleBackColor = true;
+            this.cmdNextCarte.Click += new System.EventHandler(this.cmdNextCarte_Click);
+            // 
+            // cmdSecondPlate
+            // 
+            this.cmdSecondPlate.Location = new System.Drawing.Point(360, 527);
+            this.cmdSecondPlate.Name = "cmdSecondPlate";
+            this.cmdSecondPlate.Size = new System.Drawing.Size(45, 37);
+            this.cmdSecondPlate.TabIndex = 36;
+            this.cmdSecondPlate.Text = "2";
+            this.cmdSecondPlate.UseVisualStyleBackColor = true;
+            this.cmdSecondPlate.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(812, 631);
+            this.Controls.Add(this.cmdSecondPlate);
+            this.Controls.Add(this.cmdNextCarte);
             this.Controls.Add(this.cmdCacherScores);
             this.Controls.Add(this.lstScores);
             this.Controls.Add(this.cmdAfficherScores);
@@ -486,6 +510,8 @@
         private System.Windows.Forms.Button cmdAfficherScores;
         private System.Windows.Forms.ListBox lstScores;
         private System.Windows.Forms.Button cmdCacherScores;
+        private System.Windows.Forms.Button cmdNextCarte;
+        private System.Windows.Forms.Button cmdSecondPlate;
     }
 }
 
