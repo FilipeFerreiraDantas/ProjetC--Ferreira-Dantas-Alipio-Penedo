@@ -53,10 +53,13 @@ namespace GameCardGenerator
 	public class CarteGenerator
 	{
 
-		// Le chemin pour se rendre a l'image.
-		// Le chemin par défaut devrait fonctionner si vous avez suivi les instructions
-		// Par défaut: return Application.StartupPath + "\\deck.png";
-		public static string ImagePath
+        int rd = new Random().Next(0, 4);
+        int rd2 = new Random().Next(0, 13);
+
+        // Le chemin pour se rendre a l'image.
+        // Le chemin par défaut devrait fonctionner si vous avez suivi les instructions
+        // Par défaut: return Application.StartupPath + "\\deck.png";
+        public static string ImagePath
 		{
 			get
 			{
@@ -96,9 +99,7 @@ namespace GameCardGenerator
 		// Découpe et retourne la carte sur l'image de base
 		public static Image getCarteImage( int x, int y, double size )
 		{
-            // On va chercher l'image de base
-            // On va chercher l'image de base
-            // On va chercher l'image de base
+            // On va chercher l'image de base          
             Image imgSource = new Bitmap( ImagePath );
 
 			// On crée une nouvelle image sur laquel on va dessiner
@@ -134,16 +135,77 @@ namespace GameCardGenerator
 			return getCarteImage( 1950, 400, size );
 		}
 
-        public static Image getRandomCarte(double size)
+        public static List<Image> getToutesCartes(double size)
         {
-            Array values = Enum.GetValues(typeof(SorteCarte));
-            Random random = new Random();
-            SorteCarte randomSorte = (SorteCarte)values.GetValue(random.Next(values.Length));
+            List<Image> Cartes = new List<Image>();
+
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.As, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Deux, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Trois, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Quatre, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Cinq, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Six, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Sept, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Huit, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Neuf, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Dix, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Valet, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Dame, size));
+            Cartes.Add(getCarte(SorteCarte.Coeur, ValeurCarte.Roi, size));
+
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.As, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Deux, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Trois, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Quatre, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Cinq, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Six, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Sept, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Huit, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Neuf, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Dix, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Valet, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Dame, size));
+            Cartes.Add(getCarte(SorteCarte.Carreau, ValeurCarte.Roi, size));
+
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.As, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Deux, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Trois, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Quatre, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Cinq, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Six, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Sept, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Huit, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Neuf, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Dix, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Valet, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Dame, size));
+            Cartes.Add(getCarte(SorteCarte.Pique, ValeurCarte.Roi, size));
+
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.As, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Deux, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Trois, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Quatre, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Cinq, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Six, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Sept, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Huit, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Neuf, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Dix, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Valet, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Dame, size));
+            Cartes.Add(getCarte(SorteCarte.Trefle, ValeurCarte.Roi, size));
+
+
+            /*Array values = Enum.GetValues(typeof(SorteCarte));
+            SorteCarte randomSorte = (SorteCarte)values.GetValue(new Random().Next(0, 4));
 
             Array valuesNum = Enum.GetValues(typeof(ValeurCarte));
-            ValeurCarte randomValeur = (ValeurCarte)values.GetValue(random.Next(values.Length));
+            ValeurCarte randomValeur = (ValeurCarte)valuesNum.GetValue(new Random().Next(0, 13));
 
-            return getCarteImage(((int)randomValeur) * 150, ((int)randomSorte) * 200, size);
+            Image RandomCard = getCarteImage(((int)randomValeur) * 150, ((int)randomSorte) * 200, size);*/
+
+
+            return Cartes;
         }
 
     }
