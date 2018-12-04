@@ -88,7 +88,8 @@ namespace Pyramid
         {
             random2 = rd.Next(0, Cartes.Count);
             imgNouvelleCarte.Image = Cartes.ElementAt(random2);
-            if (Cartes.Count() >= 1)
+
+            if (Cartes.Count() != 0)
             {
                 imgLastCarte.Image = imgNouvelleCarte.Image;
                 Cartes.RemoveAt(random2);
